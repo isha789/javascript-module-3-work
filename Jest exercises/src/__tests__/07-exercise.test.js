@@ -27,7 +27,7 @@ describe("07-exercises", () => {
     // 3. use await with the getUsers function and pass it as an argument
     //    the `BASE_URL` variable and then store the returned data
     //    in a variable `result`
-     const result=  await getUserData(BASE_URL)
+     const result=  await getUserData(BASE_URL) //[{...},{...},{....}]
     // 4. make an assertion that the `result` is equal to the `users.data` variable
     expect(result).toEqual(users.data)
     // 5. make an assertion that the axios.get method has been

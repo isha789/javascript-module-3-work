@@ -23,7 +23,7 @@ describe("09-exercises", () => {
 
   test("increment returns 10 for 7 + 3", () => {
     let result = null;
-
+  
     /**
      * 4. Execute the `increment` function by passing the arguments: (7, 3, calculator)
      *    and store the result in the `result` variable
@@ -39,8 +39,9 @@ describe("09-exercises", () => {
     expect(addSpy).toHaveBeenCalled();
     // 7. Make an assertion that the addSpy has been called with the
     //    numbers 7 and 3
+    expect(addSpy).toHaveBeenCalledWith(7,3);
   });
-  expect(addSpy).toHaveBeenCalledWith(7,3);
+ 
   test("increment returns 15 for 10 + 5", () => {
     let result = null;
 
@@ -48,7 +49,7 @@ describe("09-exercises", () => {
      * 8. Execute the `increment` function by passing the arguments: (10, 5, calculator)
      *    and store the result in the `result` variable
      */
-  result = increment(10,5, calculator)
+  result = increment(10, 5, calculator)
     // You should make 3 assertions in this test, see bellow
     expect.assertions(3);
 
